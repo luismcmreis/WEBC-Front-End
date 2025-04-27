@@ -1,0 +1,477 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100%;
+    background-color: #1e1e1e;
+    color: black;
+    line-height: 1.6;
+    font-family: 'Jura',sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav a {
+    color: white;
+  }
+  
+  /* Cabeçalho */
+  .header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('home.png') center center / cover no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 20px 20px 20px;
+    margin: 0;
+    padding-top: 30px;
+  }
+
+  .menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 100px;
+  }
+  
+  .menu a {
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  .hero {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .hero h1 {
+    font-size: 90px;
+    letter-spacing: 3px;
+    font-family: 'Josefin Slab', serif; 
+    font-weight: 100;
+  }
+  
+  /* Seção Intro */
+  .section.intro {
+    background-color: #e9e4d5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 160px 5%;
+    flex-wrap: nowrap;
+    position: relative;
+    border-top: 1px solid white;
+  }
+
+  .section.intro::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 60%;
+    background-color: black;
+  }
+
+  .intro-text {
+    max-width: 45%;
+    font-size: 3em;
+    color: #1e1e1e;
+    line-height: 1.4;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-left: -5%;
+  }
+
+  .green {
+    color: #686931;
+  }
+
+  .remote-jobs {
+    max-width: 45%;
+    text-align: left;
+    padding-right: 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+  }
+
+  .remote-jobs::before {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: -80px; 
+    color: black;
+    font-family: sans-serif;
+    line-height: 0.7;
+    border-left: 10px solid black; 
+    border-top: 10px solid black; 
+    width: 30px;
+    height: 30px;
+  }
+
+  .remote-jobs::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px; 
+    color: black;
+    font-family: sans-serif;
+    border-left: 10px solid black;
+    border-top: 10px solid black;
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+  }
+
+  .remote-jobs h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1e1e1e;
+    font-weight: bold;
+    white-space: nowrap; 
+    padding-left: 10px; 
+  }
+
+  .remote-jobs ul {
+    list-style: none;
+    line-height: 1.4;
+    font-size: 1.2em;
+    padding: 0;
+    color: #1e1e1e;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .remote-jobs > div {
+    display: flex;
+    gap: 120px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  /* Seção Explorar Escritório */
+  .section.explore-office {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    height: 500px;
+    align-items: stretch;
+    background-color: black;
+  }
+  
+  .image-side {
+    flex: 0.8;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text-side {
+    flex: 1;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+    margin-left: 0;
+    padding-left: 0;
+    position: relative;
+  }
+  
+  .text-side p {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 0 20px;
+    font-weight: bold;
+  }
+  
+  .text-side-button {
+    background: none;
+    border: 4px solid white;
+    color: white;
+    padding: 15px 100px; 
+    border-radius: 40px; 
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .text-side a.scroll-to-top-inside {
+    position: absolute;
+    bottom: 30px;
+    right: 30px; 
+    width: 50px;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+  }
+
+  .text-side a.scroll-to-top-inside img {
+    width: 55px; 
+    height: 55px; 
+    object-fit: contain; 
+    filter: invert(100%); 
+  }
+  
+  /* Seção Destinos */
+  .section.destinations {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    position: relative;
+  }
+  
+  .card {
+    flex: 1;
+    background-color: #e9e4d5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px; 
+    text-align: center;
+  }
+  
+  .card p {
+    font-size: 30px; 
+    margin-bottom: 30px; 
+    line-height: 1.4;
+    font-weight: bold;
+  }
+  
+  .card-button {
+    padding: 15px 100px; 
+    border: 4px solid black; 
+    background: none;
+    border-radius: 30px; 
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none; 
+    color: black; 
+  }
+  
+  .scroll-top-destinations {
+    left: 30px;
+  }
+  
+
+  .road-image {
+    flex: 1;
+  }
+  
+  .road-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Seção Blog Destacada */
+  .blog-highlight {
+    position: relative;
+    min-height: 600px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: none;
+    background-color: black;
+  }
+
+  .blog-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .blog-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .blog-highlight .scroll-to-top-inside img {
+    width: 55px; 
+    height: 55px; 
+    object-fit: contain; 
+  }
+
+  .blog-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px 120px;
+    border-radius: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: default;
+  }
+
+  /* Rodapé */
+  .footer {
+    background-color: black;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    width: fit-content; 
+  }
+
+  .social-icons {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+    max-width: 400px;
+  }
+
+  .social-icons a {
+    display: inline-block;
+  }
+
+  .social-icons img {
+    width: 55px;
+    height: auto;
+    flex-grow: 1; 
+    object-fit: contain;
+  }
+
+  .credit {
+    font-size: 15px;
+    color: white;
+  }
+
+  .scroll-to-top-inside {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+  }
+
+  .scroll-to-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+  }
+
+@media (max-width: 1024px) {
+  .menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .section.intro,
+  .section.explore-office,
+  .section.destinations {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .remote-jobs,
+  .intro-text,
+  .text-side,
+  .card {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .text-side button,
+  .card button {
+    margin-top: 15px;
+  }
+
+  .image-side img,
+  .road-image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .remote-jobs h3,
+  .text-side p,
+  .intro-text p,
+  .card p {
+    font-size: 18px;
+  }
+
+  .blog-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .footer-content h2 {
+    font-size: 20px;
+  }
+
+  .social-icons img {
+    width: 24px;
+    margin: 0 6px;
+
+  }
+
+  .credit {
+    font-size: 12px;
+  }
+}

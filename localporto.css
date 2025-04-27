@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Jura', sans-serif;
+    background: url('compass.png') no-repeat center center/cover;
+    min-height: 100vh;
+    position: relative;
+    color:black;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  .navbar {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    color: white;
+  }
+  
+  .navbar .logo img {
+    height: 50px;
+    width: auto;  
+    margin-top: 30px; 
+    margin-left: 30px; 
+      
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .navbar .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .filter-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .filter-box label {
+    font-size: 16px;
+  }
+  
+  .filter-box select {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    appearance: none;
+    background-color: white;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+  }
+  
+  .filter-box button {
+    padding: 12px;
+    background-color: #686931;
+    color: black;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .navbar .nav-links {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .filter-box {
+      margin: 80px 20px;
+      width: auto;
+    }
+  }
+  
+  .filter-box {
+    z-index: 2;
+    max-width: 700px;
+    background: rgba(233, 233, 233, 0.8);
+    margin: 0; 
+    border-radius: 25px;
+    padding: 40px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+  
+.map-container {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.map-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+  
+.contact-info {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px 30px; 
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: left; 
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px; 
+}
+
+.contact-info h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+.location-section {
+    display: flex;
+    gap: 200px;
+    align-items: stretch;
+    padding: 100px 150px;
+    position: relative;
+    z-index: 2;
+  }

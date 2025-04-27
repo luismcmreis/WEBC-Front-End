@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Locais</title>
+  <link rel="stylesheet" href="locais.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="logo_grey.png" alt="Logo" /></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="acomodacao.html">Acomodação</a></li>
+      <li><a href="locais.html">LOCAIS</a></li>
+      <li><a href="#">BLOG</a></li>
+      <li><a href="contactos.html">CONTATOS</a></li>
+    </ul>
+  </nav>
+
+  <div class="filter-box">
+    <form action="localporto.html" method="get">
+      <label for="pais">Escolha o país:</label>
+      <select id="pais" name="pais" required>
+        <option value="" disabled selected hidden>país</option>
+        <option value="portugal">Portugal</option>
+      </select>
+  
+      <label for="cidade">Escolha a cidade:</label>
+      <select id="cidade" name="cidade" required>
+        <option value="" disabled selected hidden>cidade</option>
+        <option value="porto">Porto</option>
+      </select>
+  
+      <button type="submit">Ver</button>
+    </form>
+  </div>
+  
+</body>
+</html>
